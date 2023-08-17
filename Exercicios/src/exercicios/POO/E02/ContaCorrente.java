@@ -20,7 +20,7 @@ public class ContaCorrente {
 	}
 	
 	public ContaCorrente(int numeroConta, String nomeCorrentista) {
-		new ContaCorrente(numeroConta, nomeCorrentista, 0);
+		this(numeroConta, nomeCorrentista, 0);
 	}
 
 	public void alterarNome(String nomeCorrentista) {
@@ -31,7 +31,7 @@ public class ContaCorrente {
 		if (valor > 0) {
 			this.saldo += valor;
 			System.out.println(
-					"Depósito de R$ " + valor + " realizado com sucesso.");
+					"Depósito de R$ " + valor + " realizado com sucesso na conta " + numeroConta + ".");
 		} else {
 			System.out.println("O valor do depósito deve ser positivo.");
 		}
@@ -42,10 +42,10 @@ public class ContaCorrente {
 		if (valor > 0 && valor <= saldo) {
 			this.saldo -= valor;
 			System.out
-					.println("Saque de R$ " + valor + " realizado com sucesso.");
+					.println("Saque de R$ " + valor + " realizado com sucesso na conta " + numeroConta + ".");
 		} else {
 			System.out.println(
-					"Saldo insuficiente ou valor inválido para saque.");
+					"Saldo insuficiente ou valor inválido para saque na conta " + numeroConta + ".");
 		}
 
 	}
