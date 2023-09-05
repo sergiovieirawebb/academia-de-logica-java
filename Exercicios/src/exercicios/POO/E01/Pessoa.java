@@ -18,8 +18,7 @@ public class Pessoa {
 
 	public Pessoa(String nome, String dataNascimento, float altura) {
 		this.nome = nome;
-		this.dataNascimento = LocalDate.parse(dataNascimento,
-				DateTimeFormatter.ofPattern("dd/MM/yyyy"));
+		this.dataNascimento = LocalDate.parse(dataNascimento, DateTimeFormatter.ofPattern("dd/MM/yyyy"));
 		this.altura = altura;
 	}
 
@@ -28,8 +27,7 @@ public class Pessoa {
 	}
 
 	public void setDataNascimento(String dataNascimento) {
-		this.dataNascimento = LocalDate.parse(dataNascimento,
-				DateTimeFormatter.ofPattern("dd/MM/yyyy"));
+		this.dataNascimento = LocalDate.parse(dataNascimento, DateTimeFormatter.ofPattern("dd/MM/yyyy"));
 	}
 
 	public float getAltura() {
@@ -56,8 +54,7 @@ public class Pessoa {
 
 	public void imprimirDados() {
 		System.out.println("Nome: " + nome);
-		System.out.println("Data de nascimento: " + dataNascimento
-				.format(DateTimeFormatter.ofPattern("dd/MM/yyyy")));
+		System.out.println("Data de nascimento: " + dataNascimento.format(DateTimeFormatter.ofPattern("dd/MM/yyyy")));
 		System.out.println("Altura: " + altura + " metros");
 		System.out.println("Idade: " + calcularIdade() + " anos");
 	}

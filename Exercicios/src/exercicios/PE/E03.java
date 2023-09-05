@@ -21,8 +21,7 @@ public class E03 {
 
 		float consumoMedio = distaciaPercorrida / totalCombustivelGasto;
 
-		System.out.println(
-				"Consumo médio do automóvel é " + consumoMedio + " Km/L.");
+		System.out.println("Consumo médio do automóvel é " + consumoMedio + " Km/L.");
 
 		scanner.close();
 	}
