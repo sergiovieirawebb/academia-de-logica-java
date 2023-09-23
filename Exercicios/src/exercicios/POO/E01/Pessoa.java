@@ -57,5 +57,6 @@ public class Pessoa {
 		System.out.println("Data de nascimento: " + dataNascimento.format(DateTimeFormatter.ofPattern("dd/MM/yyyy")));
 		System.out.println("Altura: " + altura + " metros");
 		System.out.println("Idade: " + calcularIdade() + " anos");
+		System.out.println();
 	}
 }
